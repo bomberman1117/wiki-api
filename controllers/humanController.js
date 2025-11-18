@@ -11,7 +11,7 @@ export const getHumanDex = async (req, res) => {
         if(err)
             return res.json(err)
         else{
-            console.log(`Retrieved ${data.length} Pokédex Entries`)
+            console.log(`Retrieved ${data.length} Human Entries`)
             return res.json(data)
         }
     })
@@ -30,7 +30,7 @@ export const getHumanDexEntry = async (req, res) => {
         if(err)
             return res.json(err)
         else {
-            console.log(`Retrieved Pokédex Entry for ${id}`)
+            console.log(`Retrieved Entry for ${id}`)
             return res.json(data)
         }
     })

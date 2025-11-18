@@ -1,4 +1,5 @@
 import db from '../dbConnection.js'
+import { getCompleteArticle } from './articleController.js'
 
 export const getPokedex = async (req, res) => {
     const query = `
